@@ -102,10 +102,12 @@ function json.encode(object) end
 ---@param string string
 ---@param position? integer
 ---@param null? unknown
+---@param objectmeta? unknown
+---@param arraymeta? unknown
 ---@return unknown? object
 ---@return integer position -- the position of the next character that doesn't belong to the object
 ---@return string? err -- in case of errors an error message
-function json.decode(string, position, null) end
+function json.decode(string, position, null, objectmeta, arraymeta) end
 
 ---You can use this value for setting explicit `null` values.
 ---@class dkjson.null
